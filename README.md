@@ -1,3 +1,1 @@
-### 永远相信美好的事情即将发生...
-
-_快捷宏文档 - https://kjh.wsd.cx
+> 快捷宏文档 - https://kjh.wsd.cx

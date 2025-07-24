@@ -8,7 +8,8 @@
 
 插件配置：
 ```
-footer: "\n---"
+window.$docsify = {
+	footer: "\n---"
 		+ "\n- 该文档更新于`{docsify-updated}`"
 		+ "\n- © 2025 [快捷宏](https://kjh.wsd.cx) All Rights Reserved.",
 },

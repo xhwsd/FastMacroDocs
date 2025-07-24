@@ -1,8 +1,7 @@
 # 测试
 
 - [DogeCloud](test/dogecloud.md)
-- [V2Geek](test/v2geek.md)
-- [Form](test/form.md)
+- [嵌入](test/implant.md)
 - [Kroki](test/kroki.md)
 - [VUE](test/vue.md)
 - [Waline](test/waline.md)

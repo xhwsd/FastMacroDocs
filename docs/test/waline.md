@@ -1,4 +1,8 @@
 # Waline
+
+
+- 该文档更新于{docsify-updated}
+
 > [Waline后台](https://waline-kjh.wsd.cx/ui/)
 
 阅读量：<span class="waline-pageview-count"></span>
