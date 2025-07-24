@@ -1,0 +1,20 @@
+<!-- 侧边栏 -->
+- 入门
+    - [安装使用](#)
+- 分享
+    - [战士](share/warrior.md)
+    - [圣骑士](share/paladin.md)
+    - [猎人](share/hunter.md)
+    - [盗贼](share/rogue.md)
+    - [牧师](share/priest.md)
+    - [萨满](share/shaman.md)
+    - [法师](share/mage.md)
+    - [术士](share/warlock.md)
+    - [德鲁伊](share/druid.md)
+    - [其它](share/other.md)
+- 其它
+    - [更新日志](CHANGELOG.md)
+	- [设计规范](#)
+	- [开发笔记](#)
+- 链接
+    - [Docsify](https://docsify.js.org)
