@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="快捷宏帮助文档">
 	<meta name="keywords" content="快捷宏,一键宏,插件,乌龟,魔兽世界">
-	<title>快捷宏 - 帮助文档</title>
+	<title>帮助文档</title>
 	<link rel="icon" href="image/icon.ico">
 	<link rel="stylesheet" href="css/vue@4.13.0.css">
 </head>
@@ -163,6 +163,15 @@
 				linkColor: 'var(--theme-color, #42b983)',
 				size: 'small'
 			},
+			// 自定义页面标题
+			customPageTitle: {
+				// 前缀
+				prefix: '',
+				// 后缀
+				suffix: '快捷宏', 
+				// 分隔符
+				separator: ' - ',
+			},
 		}
 	</script>
  
@@ -217,6 +226,8 @@
 	<!-- 面包屑导航 https://github.com/FranCarstens/docsify-breadcrumb -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/breadcrumb.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js"></script> -->
+	<!-- 自定义页面标题 https://github.com/Sujaykumarh/docsify-plugin-title -->
+	<script src="https://cdn.jsdmirror.com/npm/@sujaykumarh/docsify-plugin-title@2.x/dist/plugin.min.js"></script>
 
 	<!-- Prism代码高亮 https://github.com/PrismJS/prism -->
 
