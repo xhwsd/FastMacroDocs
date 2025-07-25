@@ -7,3 +7,4 @@
 - [Waline](test/waline.md)
 - [不蒜子](test/busuanzi.md)
 - [选择夹](test/tabs.md)
+- [mustache](test/mustache.md)

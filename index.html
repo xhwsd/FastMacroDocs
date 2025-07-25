@@ -7,7 +7,7 @@
 	<meta name="description" content="快捷宏帮助文档">
 	<meta name="keywords" content="快捷宏,一键宏,插件,乌龟,魔兽世界">
 	<title>快捷宏 - 帮助文档</title>
-	<link rel="icon" href="image/favicon.ico">
+	<link rel="icon" href="image/icon.ico">
 	<link rel="stylesheet" href="css/vue@4.13.0.css">
 </head>
 <body>
@@ -103,7 +103,7 @@
 				successText: "成功"
 			},
 			// 图表
-			kroki: {
+			_kroki: {
 				langs: [
 					"actdiag",
 					"blockdiag",
@@ -136,14 +136,33 @@
 				serverPath: "https://kroki.io/",
 			},
 			// 分页
-			pagination: {
+			_pagination: {
 				previousText: '上一章节',
 				nextText: '下一章节',
 				crossChapter: true,
 				crossChapterText: true,
 			},
 			// 加载页脚 _footer.md
-			loadFooter: true,
+			_loadFooter: true,
+			// Mustache模板
+			mustache: {
+				data: [
+					'data/vars.json',
+					'data/pom.xml',
+					{
+						question: 'What is your favorite number?'
+					}
+				]
+			},
+			// 面包屑导航
+			_breadcrumb: {
+				showHome: false,
+				homeText: '首页',
+				separator: ' &rsaquo; ',
+				casing: 'capitalize',
+				linkColor: 'var(--theme-color, #42b983)',
+				size: 'small'
+			},
 		}
 	</script>
  
@@ -183,13 +202,21 @@
 	<script src="https://cdn.jsdmirror.com/npm/docsify-copy-code@3.0.0/dist/docsify-copy-code.min.js"></script>
 
 	<!-- Kroki图表 https://github.com/zuisong/docsify-kroki -->
-	<script src="https://cdn.jsdmirror.com/npm/docsify-kroki@1.3.0/dist/docsify-kroki.js"></script>
+	<!-- <script src="https://cdn.jsdmirror.com/npm/docsify-kroki@1.3.0/dist/docsify-kroki.js"></script> -->
 
 	<!-- 分页 https://github.com/imyelo/docsify-pagination -->
 	<!-- <script src="https://cdn.jsdmirror.com/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
 
 	<!-- 页脚 https://github.com/alertbox/docsify-footer -->
 	<!-- <script src="https://cdn.jsdmirror.com/npm/@alertbox/docsify-footer@1.0.0-0/dist/docsify-footer.min.js"></script> -->
+
+	<!-- Mustache模版 https://docsify-mustache.github.io/#/ -->
+	<script src="https://cdn.jsdmirror.com/npm/docsify-mustache"></script>
+	<script src="https://cdn.jsdmirror.com/npm/docsify/lib/plugins/front-matter.min.js"></script>
+
+	<!-- 面包屑导航 https://github.com/FranCarstens/docsify-breadcrumb -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/breadcrumb.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js"></script> -->
 
 	<!-- Prism代码高亮 https://github.com/PrismJS/prism -->
 
