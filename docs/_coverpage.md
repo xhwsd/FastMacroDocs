@@ -1,5 +1,5 @@
 <!-- 封面 -->
-![logo](../image/icon.svg ':size=128')
+![logo](../image/logo.svg ':size=128')
 
 # **快捷宏**<small> v1.0.0</small>
 
