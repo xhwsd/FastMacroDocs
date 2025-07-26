@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="快捷宏帮助文档">
 	<meta name="keywords" content="快捷宏,一键宏,插件,乌龟,魔兽世界">
-	<title>帮助文档</title>
+	<title>快捷宏 - 帮助文档</title>
 	<link rel="icon" href="image/icon.ico">
 	<link rel="stylesheet" href="css/vue@4.13.0.css">
 </head>
 <body>
 	<!-- 绑定元素 -->
-	<div id="app">加载中...</div>
+	<div id="app">😶玩命加载中...</div>
 
 	<!-- docsify文档定义 -->
 	<script>
@@ -69,6 +69,15 @@
 
 			/* 自定义插件配置 */
 
+			// 页面标题
+			pageTitle: {
+				// 前缀
+				prefix: '快捷宏',
+				// 后缀
+				suffix: '', 
+				// 分隔符
+				separator: '-',
+			},
 			// Waline评论
 			waline: {
 				// 服务端地址
@@ -147,12 +156,14 @@
 			// Mustache模板
 			mustache: {
 				data: [
-					'data/vars.json',
-					'data/pom.xml',
+					// 'data/vars.json',
+					// 'data/pom.xml',
 					{
 						question: 'What is your favorite number?'
 					}
-				]
+				],
+				// 无 package
+				noPackage : true
 			},
 			// 面包屑导航
 			_breadcrumb: {
@@ -163,39 +174,26 @@
 				linkColor: 'var(--theme-color, #42b983)',
 				size: 'small'
 			},
-			// 自定义页面标题
-			customPageTitle: {
-				// 前缀
-				prefix: '',
-				// 后缀
-				suffix: '快捷宏', 
-				// 分隔符
-				separator: ' - ',
-			},
 		}
 	</script>
  
 	<!-- 基础依赖 -->
-
 	<!-- Vue 为文档中数据绑定提供支持-->
 	<script src="https://cdn.jsdmirror.com/npm/vue@2.7.15/dist/vue.min.js"></script>
-
 	<!-- Docsify核心 https://github.com/docsifyjs/docsify -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify@4.13.1/lib/docsify.min.js"></script>
 
 	<!-- Docsify官方插件 -->
-
 	<!-- 全文搜索 https://github.com/docsifyjs/docsify/tree/develop/src/plugins/search -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
-
 	<!-- 外链脚本 https://github.com/docsifyjs/docsify/tree/develop/src/plugins -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify@4.13.1/lib/plugins/external-script.min.js"></script>
-
 	<!-- 图片缩放 https://github.com/docsifyjs/docsify/tree/develop/src/plugins -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify@4.13.1/lib/plugins/zoom-image.min.js"></script>
 
 	<!-- Docsify自定义插件 -->
-
+	<!-- 页面标题 -->
+	<script src="plugins/docsify-page-title.js"></script>
 	<!-- Waline评论 -->
 	<link href='https://cdn.jsdmirror.com/npm/@waline/client@v2/dist/waline.css' rel='stylesheet' />
 	<script src='https://cdn.jsdmirror.com/npm/@waline/client@v2/dist/waline.js'></script>
@@ -206,31 +204,22 @@
 	<!-- Docsify第三方插件 -->
 	<!-- 选择夹 https://jhildenbiddle.github.io/docsify-tabs -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify-tabs@1"></script>
-
   	<!-- 复制代码到剪贴板 https://github.com/jperasmus/docsify-copy-code -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify-copy-code@3.0.0/dist/docsify-copy-code.min.js"></script>
-
 	<!-- Kroki图表 https://github.com/zuisong/docsify-kroki -->
 	<!-- <script src="https://cdn.jsdmirror.com/npm/docsify-kroki@1.3.0/dist/docsify-kroki.js"></script> -->
-
 	<!-- 分页 https://github.com/imyelo/docsify-pagination -->
 	<!-- <script src="https://cdn.jsdmirror.com/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
-
 	<!-- 页脚 https://github.com/alertbox/docsify-footer -->
 	<!-- <script src="https://cdn.jsdmirror.com/npm/@alertbox/docsify-footer@1.0.0-0/dist/docsify-footer.min.js"></script> -->
-
 	<!-- Mustache模版 https://docsify-mustache.github.io/#/ -->
 	<script src="https://cdn.jsdmirror.com/npm/docsify-mustache"></script>
 	<script src="https://cdn.jsdmirror.com/npm/docsify/lib/plugins/front-matter.min.js"></script>
-
 	<!-- 面包屑导航 https://github.com/FranCarstens/docsify-breadcrumb -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/breadcrumb.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js"></script> -->
-	<!-- 自定义页面标题 https://github.com/Sujaykumarh/docsify-plugin-title -->
-	<script src="https://cdn.jsdmirror.com/npm/@sujaykumarh/docsify-plugin-title@2.x/dist/plugin.min.js"></script>
 
 	<!-- Prism代码高亮 https://github.com/PrismJS/prism -->
-
 	<!-- Bash -->
 	<script src="https://cdn.jsdmirror.com/npm/prismjs@1.30.0/components/prism-bash.min.js"></script>
 	<!-- Markdown -->
@@ -245,7 +234,6 @@
 	<script src="https://cdn.jsdmirror.com/npm/prismjs@1.30.0/components/prism-lua.min.js"></script>
 
 	<!-- 其它 -->
-
 	<!-- DogeCloud 视频云服务 -->
 	<script src="https://player.dogecloud.com/js/loader"></script>
 </body>

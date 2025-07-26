@@ -16,13 +16,16 @@ https://github.com/nopdan/docsify-waline/
 
 插件配置：
 ```
-Waline: {
-	serverURL: 'https://waline-kjh.wsd.cx',	
-	locale: {
-		admin: '管理员',
-		placeholder: '既然都滑到这里了，不妨留下你的评论~',
+window.$docsify = {
+	// 评论
+	waline: {
+		serverURL: 'https://waline-kjh.wsd.cx',	
+		locale: {
+			admin: '管理员',
+			placeholder: '既然都滑到这里了，不妨留下你的评论~',
+		},
 	},
-},
+}
 ```
 
 安装容器：
